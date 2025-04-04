@@ -5,7 +5,7 @@ import os
 import torch.nn.functional as F
 from .encoder.mamba_fuse import Mamba_fusion
 
-class BrainNetworkMamba(nn.Module):
+class CDCo_MambaNet(nn.Module):
     def __init__(self, config: DictConfig):
         super().__init__()
         self.fuse_encoder = Mamba_fusion(config, config.model.fuse_channel, config.model.fuse_shape)
