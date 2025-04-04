@@ -1,0 +1,17 @@
+name: CDCo-MambaNet
+fuse_channel: 512
+fuse_shape: 48
+ct_loss: 1
+rate1: 0.1 
+rate2: 0.5
+abide_fmri_feature_shape: 64
+adni_fmri_feature_shape: 48
+taowu_fmri_feature_shape: 120
+neurocon_fmri_feature_shape: 72
+smri_feature_shape: 54
+fmri_encoder_deepth: [2, 2, 6, 2]
+fmri_encoder_dims: [64, 128, 256, 512, 1024]
+d_state: 8
+d_conv: 3
+expand: 4
+cls_num: 4
