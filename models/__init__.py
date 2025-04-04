@@ -2,7 +2,7 @@ from .transformer import GraphTransformer
 from omegaconf import DictConfig
 from .brainnetcnn import BrainNetCNN
 from .fbnetgen import FBNETGEN
-from .BNT import BrainNetworkMamba
+from .CDCo_MambaNet import CDCo_MambaNet
 
 
 def model_factory(config: DictConfig):
