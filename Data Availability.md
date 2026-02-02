@@ -4,7 +4,7 @@ Alzheimer's Disease Neuroimaging Initiative (ADNI): The raw data used in this st
 
 Parkinson's Progressive Markers Initiative (PPMI): The PPMI aims to identify biomarkers for the risk, onset, and conversion of Parkinson's disease. The full dataset and documentation can be downloaded from https://www.ppmi-info.org/.
 
-UCLAConsortium for Neuropsychiatric Phenomics LA5c Study (UCLA): The dataset shared by the UCLA Consortium for Neuropsychiatric Phenomics LA5c Study.The full dataset and documentation can be downloaded from https://legacy.openfmri.org/dataset/ds000030/.
+UCLA Consortium for Neuropsychiatric Phenomics LA5c Study (UCLA): The dataset shared by the UCLA Consortium for Neuropsychiatric Phenomics LA5c Study.The full dataset and documentation can be downloaded from https://legacy.openfmri.org/dataset/ds000030/.
 
 Autism Brain Imaging Data Exchange (ABIDE): The ABIDE dataset was established by aggregating brain imaging datafrom laboratories worldwide to support research on autism spectrum disorders (ASD). ASD encompasses a range of prominent symptoms, including irritability, hyperactivity, and depression. The full dataset and documentation can be downloaded from http://preprocessed-connectomes-project.org/abide/.
 
