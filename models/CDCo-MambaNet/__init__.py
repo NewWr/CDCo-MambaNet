@@ -1,1 +1,1 @@
-from .bnt import BrainNetworkMamba
+from .bnt import CDCo_MambaNet
