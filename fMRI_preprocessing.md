@@ -129,3 +129,41 @@ pd.DataFrame(X).to_csv("ROISignals_Sub001.csv", index=False)
 ## **Acknowledgements**
 
  We gratefully acknowledge **DPABI** and its documentation provided by **R-fMRI Network** (http://rfmri.net/dpabi), which enabled the preprocessing and ROI time-series extraction workflow used in this project.
+
+
+
+# sMRI (T1w) Preprocessing to 96×96×96 (SimpleITK-based)
+
+---
+
+## Inputs
+
+- Raw 3D T1w sMRI (NIfTI)
+- MNI152 T1 template (NIfTI)
+- (Optional) MNI-space brain mask (NIfTI) for skull stripping
+
+---
+
+## Processing Steps (High-level)
+
+1. **Load T1w sMRI**
+2. **N4 Bias Field Correction**
+   - Correct intensity inhomogeneity across the image.
+3. **Resampling (optional but recommended)**
+   - Resample to a consistent isotropic voxel spacing (e.g., 1 mm) to standardize geometry.
+4. **Skull Stripping**
+   - Remove non-brain tissues (using a subject-space method or an MNI-space mask after normalization).
+5. **Linear Registration & Spatial Normalization to MNI152**
+   - Perform rigid/affine registration to align the subject T1w to the MNI152 template.
+   - Resample the image into MNI space.
+6. **Intensity Normalization (recommended)**
+   - Apply z-score normalization or other robust intensity scaling within the brain mask.
+7. **Downsample / Reshape to 96×96×96**
+   - Resample the MNI-aligned brain volume to a fixed grid size **96×96×96**.
+   - Use linear interpolation for intensity images.
+
+---
+
+## Output
+
+- Preprocessed 3D volume in MNI space with fixed size: **96×96×96** (NIfTI)
