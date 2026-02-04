@@ -167,3 +167,5 @@ pd.DataFrame(X).to_csv("ROISignals_Sub001.csv", index=False)
 ## Output
 
 - Preprocessed 3D volume in MNI space with fixed size: **96×96×96** (NIfTI)
+  
+
