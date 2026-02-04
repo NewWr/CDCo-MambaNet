@@ -21,9 +21,13 @@ Run the following command to train the model.
 The repository uses public neuroimaging datasets. Raw data must be obtained from the official sources and used in accordance with their licenses/terms:
 
 ADNI: https://adni.loni.usc.edu/
+
 PPMI: https://www.ppmi-info.org/
+
 UCLA (LA5c): https://legacy.openfmri.org/dataset/ds000030/
+
 ABIDE: http://preprocessed-connectomes-project.org/abide/
+
 TaoWu & Neurocon (PD): http://fcon_1000.projects.nitrc.org/indi/retro/parkinsons.html
 
 ## Preprocessing Overview
@@ -31,6 +35,7 @@ TaoWu & Neurocon (PD): http://fcon_1000.projects.nitrc.org/indi/retro/parkinsons
 Two preprocessing routes are assumed:
 
 rs-fMRI: DPABI/DPARSFA-based preprocessing followed by ROI time-series (ROISignals) extraction.
+
 sMRI (T1w): SimpleITK-based preprocessing including bias correction, (optional) skull stripping, MNI normalization, and reshaping to 96×96×96.
 
 ## Pretrained Weights
@@ -38,5 +43,9 @@ sMRI (T1w): SimpleITK-based preprocessing including bias correction, (optional) 
 Pretrained weights are provided here:
 
 Weights: https：https://pan.baidu.com/s/1PeayeTF_AYCfsm4pZKzW_Q Key:2772
+
+## Usage 
+
+Run the following command to train the model.
 
 `python -m source --multirun datasz=100p model=CDCo-MambaNet dataset=UCLA repeat_time=5 preprocess=mixup`
