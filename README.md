@@ -15,6 +15,7 @@ This repository contains source code for "Contrastive Distillation and Cross-Mod
 ## Usage
 Run the following command to train the model.
 
+`python -m source --multirun datasz=100p model=CDCo-MambaNet dataset=UCLA repeat_time=5 preprocess=mixup`
 
 ## Data Availability
 
@@ -44,8 +45,3 @@ Pretrained weights are provided here:
 
 Weights: https：https://pan.baidu.com/s/1PeayeTF_AYCfsm4pZKzW_Q Key:2772
 
-## Usage 
-
-Run the following command to train the model.
-
-`python -m source --multirun datasz=100p model=CDCo-MambaNet dataset=UCLA repeat_time=5 preprocess=mixup`
